@@ -11,11 +11,6 @@ class Cutie {
       this->cuteness_rating = cuteness_rating;
     }
 
-    std::string get_description() {
-      return this->description;
-    }
-
-    int get_cuteness_rating() {
-      return this->cuteness_rating;
-    }
+    virtual std::string get_description() = 0;
+    virtual int get_cuteness_rating() = 0;
 }
